@@ -1,468 +1,158 @@
 <!DOCTYPE html>
-<html lang="en-us">
-
-  <head>
-  <meta charset="utf-8">
-  <meta name="robots" content="all,follow">
-  <meta name="googlebot" content="index,follow,snippet,archive">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Foobottom</title>
-  <meta name="author" content="" />
-
-  
-  <meta name="keywords" content="devows, hugo, go">	
-  
-
-  
-  <meta name="description" content="Site template made by devcows using hugo">	
-  
-
-  <meta name="generator" content="Hugo 0.30.2" />
-
-  <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,500,700,800' rel='stylesheet' type='text/css'>
-
-  
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-  
-  <link href="http://web.metatab.org/css/animate.css" rel="stylesheet">
-
-  
-  
-    <link href="http://web.metatab.org/css/style.default.css" rel="stylesheet" id="theme-stylesheet">
-  
-
-
-  
-  <link href="http://web.metatab.org/css/custom.css" rel="stylesheet">
-
-  
-  
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  
-
-  
-  <link rel="shortcut icon" href="http://web.metatab.org/img/favicon.ico" type="image/x-icon" />
-  <link rel="apple-touch-icon" href="http://web.metatab.org/img/apple-touch-icon.png" />
-  
-
-  <link href="http://web.metatab.org/css/owl.carousel.css" rel="stylesheet">
-  <link href="http://web.metatab.org/css/owl.theme.css" rel="stylesheet">
-
-  <link rel="alternate" href="http://web.metatab.org/index.xml" type="application/rss+xml" title="Foobottom">
-
-  
-  <meta property="og:title" content="Foobottom" />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="//" />
-  <meta property="og:image" content="img/logo.png" />
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Metatab — Metadata for Mortals</title>
+<meta name="description" content="Metatab stores metadata in a spreadsheet, alongside data, making it easy to create, read, and impossible to separate from the data.">
+<link rel="icon" type="image/png" href="images/logo-64.png">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-
-  <body>
-
-    <div id="all">
-
-        <header>
-
-          
-
-
-          <div class="navbar-affixed-top" data-spy="affix" data-offset-top="200">
-
-    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
-
-        <div class="container">
-            <div class="navbar-header">
-                <a class="navbar-brand home" href="http://web.metatab.org/">
-                    <img src="http://web.metatab.org/img/logo.png" alt="Foobottom logo" class="hidden-xs hidden-sm">
-                    <img src="http://web.metatab.org/img/logo-small.png" alt="Foobottom logo" class="visible-xs visible-sm">
-                    <span class="sr-only">Foobottom - go to homepage</span>
-                </a>
-                <div class="navbar-buttons">
-                    <button type="button" class="navbar-toggle btn-template-main" data-toggle="collapse" data-target="#navigation">
-                      <span class="sr-only">Toggle Navigation</span>
-                        <i class="fa fa-align-justify"></i>
-                    </button>
-                </div>
-            </div>
-            
-
-            <div class="navbar-collapse collapse" id="navigation">
-                <ul class="nav navbar-nav navbar-right">
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/">Home</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/blog/">Blog</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/faq/">FAQ</a>
-                    
-                  </li>
-                  
-                  <li class="dropdown">
-                    
-                    <a href="/contact/">Contact</a>
-                    
-                  </li>
-                  
-                </ul>
-            </div>
-            
-
-            <div class="collapse clearfix" id="search">
-
-                <form class="navbar-form" role="search">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                        <span class="input-group-btn">
-
-                    <button type="submit" class="btn btn-template-main"><i class="fa fa-search"></i></button>
-
-                </span>
-                    </div>
-                </form>
-
-            </div>
-            
-
+<header>
+  <div class="container">
+    <a href="/" class="logo">
+      <img src="images/logo-64.png" alt="Metatab">
+      <span>Metatab</span>
+    </a>
+    <nav>
+      <a href="/" class="active">Home</a>
+      <div class="dropdown">
+        <a href="#">Install</a>
+        <div class="dropdown-menu">
+          <a href="https://github.com/Metatab/metapack">Metapack Packaging Programs</a>
+          <a href="https://github.com/CivicKnowledge/metatab-py">Metatab Python Module</a>
+          <a href="projects/metatab-add-on/">Google Spreadsheets Add-On</a>
+          <a href="https://github.com/CivicKnowledge/metatab-js">Javascript Module</a>
         </div>
-    </div>
-    
-
-</div>
-
-
-
-
-        </header>
-
-        
-
-
-
-
-        
-
-
-
-
-        
-
-
-
-
-        
-
-<section class="bar background-image-fixed-2 no-mb color-white text-center">
-    <div class="dark-mask"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="icon icon-lg"><i class="fa fa-file-code-o"></i>
-                </div>
-                <h3 class="text-uppercase">Do you want to see more?</h3>
-                <p class="lead">We have prepared for you more than 40 different HTML pages, including 5 variations of homepage.</p>
-                <p class="text-center">
-                    <a href="#" class="btn btn-template-transparent-black btn-lg">Check other homepages</a>
-                </p>
-            </div>
-
+      </div>
+      <div class="dropdown">
+        <a href="#">Specifications</a>
+        <div class="dropdown-menu">
+          <a href="https://github.com/Metatab/metatab-declarations/blob/master/specs/Metatab%20Specification.md">Metatab Format</a>
+          <a href="https://github.com/Metatab/metatab-declarations/blob/master/specs/Metatab%20Packages.md">Metapack Packages</a>
         </div>
+      </div>
+      <a href="posts/">Posts</a>
+      <a href="contact/">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>Metatab &amp; Metapack</h1>
+    <p class="subtitle">Metatab stores metadata in a spreadsheet, alongside data, ensuring that the metadata is easy to create, easy to read, and cannot be separated from the data. Metapack builds data packages with Metatab metadata.</p>
+    <div class="cta-buttons">
+      <a href="http://docs.metatab.org/" class="btn btn-primary">Metapack Documentation</a>
+      <a href="https://github.com/Metatab/metatab-declarations/blob/master/specs/Metatab%20Specification.md" class="btn btn-outline">Metatab Specifications</a>
+      <a href="https://github.com/Metatab/metapack" class="btn btn-outline">GitHub Project</a>
     </div>
+  </div>
 </section>
 
-
-
-
-        
-
-<section class="bar background-white no-mb">
-    <div class="container">
-
-        <div class="col-md-12">
-            <div class="heading text-center">
-                <h2>From our blog</h2>
-            </div>
-
-            <p class="lead">
-              Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-            </p>
-
-            
-
-            <div class="row">
-
-                
-                
-                <div class="col-md-3 col-sm-6">
-                    <div class="box-image-text blog">
-                        <div class="top">
-                            <div class="image" style="overflow:hidden">
-                                
-                                <img src="http://web.metatab.org/img/placeholder.png" class="img-responsive" alt="">
-                                
-                            </div>
-                            <div class="bg"></div>
-                            <div class="text">
-                                <p class="buttons">
-                                    <a href="http://web.metatab.org/blog/1/01/01/foobottom/" class="btn btn-template-transparent-primary"><i class="fa fa-link"></i> Read more</a>
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="content">
-                            <h4><a href="http://web.metatab.org/blog/1/01/01/foobottom/">This is a first new post</a></h4>
-                            <p class="author-category">
-                            
-                            on January 1, 0001
-                            </p>
-                            <p class="intro">Yeah, this is a new post.</p>
-                            <p class="read-more">
-                              <a href="http://web.metatab.org/blog/1/01/01/foobottom/" class="btn btn-template-main">Continue reading</a>
-                            </p>
-                        </div>
-                    </div>
-                    
-
-                </div>
-                
-
-            </div>
-            
-
-            
-
-        </div>
-    </div>
-    
+<section>
+  <div class="container">
+    <h2>Metadata for Mortals</h2>
+    <p>Metatab is a way of writing and storing metadata in the same spreadsheet as a dataset. Because it uses a tool every user already has — a spreadsheet — it is much simpler than documenting metadata in XML or JSON, resulting in more public datasets being properly documented.</p>
+    <p>Metadata is easily read by people and can be programmatically converted to machine formats like JSON, so, with a spreadsheet extension, metadata can be validated while users enter it, and the metadata allows for sophisticated automatic processing.</p>
+    <p>Metatab is a core part of <strong>Metapack</strong>, a data packaging format that uses Metatab formatted metadata files for building ZIP, Excel and Directory based data packages.</p>
+  </div>
 </section>
 
-
-
-
-
-        
-
-
-<section class="bar background-gray no-mb">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="heading text-center">
-                    <h2>Our Clients</h2>
-                </div>
-
-                <p class="lead">
-                  
-                </p>
-
-                <ul class="owl-carousel customers">
-                    
-                    <li class="item" title="customer-1">
-                        
-                          <a href="http://www.customer1.com" target="_blank">
-                            <img src="img/clients/customer-1.png" alt="customer-1" class="img-responsive" />
-                          </a>
-                        
-                    </li>
-                    
-                    <li class="item" title="customer-2">
-                        
-                          <a href="http://www.customer2.com" target="_blank">
-                            <img src="img/clients/customer-2.png" alt="customer-2" class="img-responsive" />
-                          </a>
-                        
-                    </li>
-                    
-                    <li class="item" title="customer-3">
-                        
-                          <a href="http://www.customer3.com" target="_blank">
-                            <img src="img/clients/customer-3.png" alt="customer-3" class="img-responsive" />
-                          </a>
-                        
-                    </li>
-                    
-                    <li class="item" title="customer-4">
-                        
-                          <a href="http://www.customer4.com" target="_blank">
-                            <img src="img/clients/customer-4.png" alt="customer-4" class="img-responsive" />
-                          </a>
-                        
-                    </li>
-                    
-                    <li class="item" title="customer-5">
-                        
-                          <a href="http://www.customer5.com" target="_blank">
-                            <img src="img/clients/customer-5.png" alt="customer-5" class="img-responsive" />
-                          </a>
-                        
-                    </li>
-                    
-                    <li class="item" title="customer-6">
-                        
-                          <a href="http://www.customer6.com" target="_blank">
-                            <img src="img/clients/customer-6.png" alt="customer-6" class="img-responsive" />
-                          </a>
-                        
-                    </li>
-                    
-                </ul>
-                
-            </div>
-        </div>
+<section class="alt">
+  <div class="container">
+    <h2>The Metatab/Metapack System</h2>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Specification</h3>
+        <p>A clear specification for how to write standard metadata elements in a tabular format, using familiar spreadsheet tools.</p>
+      </div>
+      <div class="card">
+        <h3>CLI Programs</h3>
+        <p>Command-line tools for building metadata files and data packages, making automation easy.</p>
+      </div>
+      <div class="card">
+        <h3>Code Libraries</h3>
+        <p>Python and JavaScript libraries for parsing and manipulating Metatab data programmatically.</p>
+      </div>
     </div>
+    <h3 style="margin-top: 40px;">Also demonstrated</h3>
+    <ul class="feature-list">
+      <li>Spreadsheet extensions that help users create valid metadata</li>
+      <li>A web service that supports the spreadsheet extensions</li>
+    </ul>
+  </div>
 </section>
 
-
-
-
-
-        <footer id="footer">
-    <div class="container">
-
-        
-        <div class="col-md-4 col-sm-6">
-            <h4>About us</h4>
-
-            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-
-            <hr class="hidden-md hidden-lg hidden-sm">
-
-        </div>
-        
-        
-
-        <div class="col-md-4 col-sm-6">
-
-             
-            <h4>Recent posts</h4>
-
-            <div class="blog-entries">
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="http://web.metatab.org/blog/1/01/01/foobottom/">
-                          
-                            <img src="http://web.metatab.org/img/placeholder.png" class="img-responsive" alt="">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="http://web.metatab.org/blog/1/01/01/foobottom/">This is a first new post</a></h5>
-                    </div>
-                </div>
-                
-                <div class="item same-height-row clearfix">
-                    <div class="image same-height-always">
-                        <a href="http://web.metatab.org/blog/">
-                          
-                            <img src="http://web.metatab.org/img/placeholder.png" class="img-responsive" alt="">
-                          
-                        </a>
-                    </div>
-                    <div class="name same-height-always">
-                        <h5><a href="http://web.metatab.org/blog/">Blogs</a></h5>
-                    </div>
-                </div>
-                
-            </div>
-
-            <hr class="hidden-md hidden-lg">
-             
-
-        </div>
-        
-
-        
-        <div class="col-md-4 col-sm-6">
-
-          <h4>Contact</h4>
-
-            <strong>Universal Ltd.</strong>
-        <br>13/25 New Avenue
-        <br>Newtown upon River
-        <br>45Y 73J
-        <br>England
-        <br>
-        <strong>Great Britain</strong>
-      </p>
-      
-
-
-            <a href="/contact" class="btn btn-small btn-template-main">Go to contact page</a>
-
-            <hr class="hidden-md hidden-lg hidden-sm">
-
-        </div>
-        
-        
-
+<section>
+  <div class="container">
+    <h2>How It Works</h2>
+    <p>The core of the project is the Metatab data format, which allows complex information to be represented in a simple, readable way in a spreadsheet. Using Metatab, a data producer can open a dataset in a spreadsheet, and quickly create valid metadata that conforms to standards. After publication, data consumers can read and understand the metadata with no training and no additional tools.</p>
+    <div class="example-grid">
+      <img src="images/metatab-main.png" alt="Metatab in Google Spreadsheets">
+      <img src="images/metatab-validation.png" alt="Metatab in Excel">
     </div>
-    
+  </div>
+</section>
+
+<section class="alt">
+  <div class="container">
+    <h2>Metadata Shouldn't Be Hard</h2>
+    <p>Most of the time, metadata is hard, so most public data producers don't bother with it. Standard metadata, like Dublin Core, has easy-to-remember metadata terms and elements, but linking it to a file involves writing what most users consider cryptic formats, like RDF, XML, or JSON.</p>
+    <p>Metatab uses standard Dublin Core metadata elements, but allows users to read and write them in a very familiar, readable format.</p>
+    <div class="comparison">
+      <div class="comparison-box">
+        <h3>Tabular Metadata (Metatab)</h3>
+        <table class="metatab-table">
+          <tr><th>property</th><th>value</th></tr>
+          <tr><td>Title</td><td>An Example Data bundle</td></tr>
+          <tr><td>Title.language</td><td>en</td></tr>
+          <tr><td>Description</td><td>This data bundle is an example of how simple a data bundle can be.</td></tr>
+        </table>
+      </div>
+      <div class="comparison-box">
+        <h3>RDF/XML Metadata</h3>
+        <pre><code>&lt;?xml version="1.0"?&gt;
+&lt;rdf:RDF xmlns:rdf="http://..."
+         xmlns:dc="http://..."&gt;
+  &lt;rdf:Description&gt;
+    &lt;dc:title&gt;An Example
+      Data bundle&lt;/dc:title&gt;
+    &lt;dc:description&gt;This data
+      bundle is an example...&lt;/dc:description&gt;
+  &lt;/rdf:Description&gt;
+&lt;/rdf:RDF&gt;</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container" style="text-align: center;">
+    <h2>Get Metatab</h2>
+    <p>The Metatab project is just getting started, and we need your help.</p>
+    <div class="card-grid">
+      <div class="card">
+        <h3>Data Producers</h3>
+        <p>We're looking for government agencies who produce public data to provide input on their data workflows and other requirements.</p>
+      </div>
+      <div class="card">
+        <h3>Data Consumers</h3>
+        <p>If you use public data and would like better metadata, knowing what you need will help us get the project funded.</p>
+      </div>
+    </div>
+    <p style="margin-top: 20px;">For more information, contact: <a href="contact/">Eric Busboom</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>Metatab — Metadata for Mortals. <a href="https://github.com/Metatab">GitHub</a> &middot; <a href="contact/">Contact</a></p>
+  </div>
 </footer>
 
-
-
-
-
-
-
-<div id="copyright">
-    <div class="container">
-        <div class="col-md-12">
-            
-            <p class="pull-left">Copyright (c) 2015 - 2016, YourCompany; all rights reserved.</p>
-            
-            <p class="pull-right">
-              Template by <a href="http://bootstrapious.com/free-templates">Bootstrapious</a>.
-              
-
-              Ported to Hugo by <a href="https://github.com/devcows/hugo-universal-theme">DevCows</a>
-            </p>
-        </div>
-    </div>
-</div>
-
-
-
-
-
-    </div>
-    
-
-    
-<script src="//code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0/jquery.counterup.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-parallax/1.1.3/jquery-parallax.js"></script>
-
-<script src="//maps.googleapis.com/maps/api/js?key=AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y&v=3.exp"></script>
-
-<script src="http://web.metatab.org/js/hpneo.gmaps.js"></script>
-<script src="http://web.metatab.org/js/gmaps.init.js"></script>
-<script src="http://web.metatab.org/js/front.js"></script>
-
-
-<script src="http://web.metatab.org/js/owl.carousel.min.js"></script>
-
-
-  </body>
+</body>
 </html>
