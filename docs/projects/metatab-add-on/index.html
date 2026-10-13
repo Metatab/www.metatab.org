@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Metatab Google Spreadsheets Add-On</title>
+<title>Metatab Google Spreadsheets Add-On | Metatab</title>
 <link rel="icon" type="image/png" href="../../images/logo-64.png">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../css/style.css">
 </head>
 <body>
@@ -14,21 +14,20 @@
   <div class="container">
     <a href="/" class="logo">
       <img src="../../images/logo-64.png" alt="Metatab">
-      <span>Metatab</span>
     </a>
     <nav>
       <a href="/">Home</a>
       <div class="dropdown">
-        <a href="#">Install</a>
+        <a href="https://github.com/Metatab/metapack">Install</a>
         <div class="dropdown-menu">
           <a href="https://github.com/Metatab/metapack">Metapack Packaging Programs</a>
           <a href="https://github.com/CivicKnowledge/metatab-py">Metatab Python Module</a>
-          <a href="../../projects/metatab-add-on/" class="active">Google Spreadsheets Add-On</a>
+          <a href="../../projects/metatab-add-on/">Metatab Google Spreadsheets Add-On</a>
           <a href="https://github.com/CivicKnowledge/metatab-js">Javascript Module</a>
         </div>
       </div>
       <div class="dropdown">
-        <a href="#">Specifications</a>
+        <a href="https://docs.google.com/document/d/16tb7x73AyF8pJ6e6IBcaIJAioEZCNBGDEksKYTXfdfg/edit?usp=sharing">Specifications</a>
         <div class="dropdown-menu">
           <a href="https://github.com/Metatab/metatab-declarations/blob/master/specs/Metatab%20Specification.md">Metatab Format</a>
           <a href="https://github.com/Metatab/metatab-declarations/blob/master/specs/Metatab%20Packages.md">Metapack Packages</a>
@@ -40,52 +39,54 @@
   </div>
 </header>
 
-<section>
-  <div class="container">
-    <h2>Metatab Google Spreadsheets Add-On</h2>
-    <p>This Add-on for Google Spreadsheets provides validation for Metatab terms and can convert Metatab data to JSON format.</p>
-    <a href="#" class="btn btn-primary" style="margin: 16px 0;">Install Add-On</a>
-  </div>
+<section class="hero" style="padding-top: 40px;">
+  <h1 style="font-size: 36px;">Metatab Google Spreadsheets Add-On</h1>
 </section>
 
-<section class="alt">
-  <div class="container">
-    <p>The Metatab Google Spreadsheets Add-On is a simple extension that loads Metatab templates, adds basic Metatab term validation, and can produce a JSON representation of Metatab metadata.</p>
-    <p>The Add-On is not publicly released yet — it is still early stage software — but you can visit the Chrome Webstore Application page directly to get an install link. Clicking on the "Install" button will create a new Spreadsheet with the Add-on installed and present a pop-up help note on how to get started.</p>
-    <p><strong>Problems?</strong> Visit our <a href="https://github.com/Metatab/metatab/issues">GitHub Issues page</a> to submit a ticket or ask for help.</p>
+<main>
+  <div class="row">
+    <div class="col-1-1">
+      <p>This Add-on for Google Spreadsheets provides validation for Metatab terms and can convert Metatab data to JSON format.</p>
+      <p><a href="#" class="btn">Install Add-On</a></p>
+    </div>
   </div>
-</section>
 
-<section>
-  <div class="container">
-    <h2>How to Use</h2>
-    <p>Use the single Add-On menu to initialize a template or convert to JSON.</p>
-    <p>After installing, you will have a new Spreadsheet with a "Metatab" entry in the "Add-ons" menu. Your options are:</p>
-    <ul class="feature-list">
-      <li>Initialize from a blank template</li>
-      <li>Initialize from a filled example template</li>
-      <li>Convert the current metadata, in the 'Meta' tab, to JSON format</li>
-    </ul>
-    <img src="../../images/addon-menus.png" alt="Add-On Menus" style="max-width: 100%; border: 1px solid var(--border); border-radius: 6px; margin-top: 20px;">
+  <div class="row">
+    <div class="col-1-1">
+      <p>The Metatab Google Spreadsheets Add-On is a simple extension that loads Metatab templates, adds basic Metatab term validation, and can produce a JSON representation of Metatab metadata.</p>
+      <p>The Add-On is not publicly released yet — it is still early stage software — but you can visit the Chrome Webstore Application page directly to get an install link. Clicking on the "Install" button will create a new Spreadsheet with the Add-on installed and present a pop-up help note on how to get started.</p>
+      <p><strong>Problems?</strong> Visit our <a href="https://github.com/Metatab/metatab/issues">Github Issues page</a> to submit a ticket or ask for help.</p>
+    </div>
   </div>
-</section>
 
-<section class="alt">
-  <div class="container">
-    <h2>Features</h2>
-    <ul class="feature-list">
-      <li>The first column holds Metatab metadata terms, and has a pull-down list and validation to ensure the terms are correct</li>
-      <li>Terms are validated per section, and incorrect terms are flagged</li>
-      <li>Some of the term values (currently only the Format term) have validation for the value</li>
-      <li>Templates are drawn from built-in schemas</li>
-    </ul>
+  <div class="row">
+    <div class="col-1-1">
+      <h2>How to Use</h2>
+      <p>Use the single Add-On menu to initialize a template or convert to JSON. After installing, you will have a new Spreadsheet with a "Metatab" entry in the "Add-ons" menu. Your options are:</p>
+      <ul class="content-list">
+        <li>Initialize from a blank template</li>
+        <li>Initialize from a filled example template</li>
+        <li>Convert the current metadata, in the 'Meta' tab, to JSON format</li>
+      </ul>
+      <img class="side-img" src="../../images/addon-menus.png" alt="Add-On Menus" style="max-width: 500px;">
+    </div>
   </div>
-</section>
+
+  <div class="row">
+    <div class="col-1-1">
+      <h2>Features</h2>
+      <ul class="content-list">
+        <li>The first column holds Metatab metadata terms, and has a pull-down list and validation to ensure the terms are correct</li>
+        <li>Terms are validated per section, and incorrect terms are flagged</li>
+        <li>Some of the term values (currently only the Format term) have validation for the value</li>
+        <li>Templates are drawn from built-in schemas</li>
+      </ul>
+    </div>
+  </div>
+</main>
 
 <footer>
-  <div class="container">
-    <p>Metatab — Metadata for Mortals. <a href="https://github.com/Metatab">GitHub</a> &middot; <a href="../../contact/">Contact</a></p>
-  </div>
+  <p>Designed by Elegant Themes | Powered by WordPress</p>
 </footer>
 
 </body>

@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Metatab — Metadata for Mortals</title>
-<meta name="description" content="Metatab stores metadata in a spreadsheet, alongside data, making it easy to create, read, and impossible to separate from the data.">
+<title>Metatab | Metadata for Mortals</title>
+<meta name="description" content="Metatab stores metadata in a spreadsheet, alongside data, ensuring that the metadata is easy to create, easy to read, and cannot be separated from the data.">
 <link rel="icon" type="image/png" href="images/logo-64.png">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,21 +15,20 @@
   <div class="container">
     <a href="/" class="logo">
       <img src="images/logo-64.png" alt="Metatab">
-      <span>Metatab</span>
     </a>
     <nav>
       <a href="/" class="active">Home</a>
       <div class="dropdown">
-        <a href="#">Install</a>
+        <a href="https://github.com/Metatab/metapack">Install</a>
         <div class="dropdown-menu">
           <a href="https://github.com/Metatab/metapack">Metapack Packaging Programs</a>
           <a href="https://github.com/CivicKnowledge/metatab-py">Metatab Python Module</a>
-          <a href="projects/metatab-add-on/">Google Spreadsheets Add-On</a>
+          <a href="projects/metatab-add-on/">Metatab Google Spreadsheets Add-On</a>
           <a href="https://github.com/CivicKnowledge/metatab-js">Javascript Module</a>
         </div>
       </div>
       <div class="dropdown">
-        <a href="#">Specifications</a>
+        <a href="https://docs.google.com/document/d/16tb7x73AyF8pJ6e6IBcaIJAioEZCNBGDEksKYTXfdfg/edit?usp=sharing">Specifications</a>
         <div class="dropdown-menu">
           <a href="https://github.com/Metatab/metatab-declarations/blob/master/specs/Metatab%20Specification.md">Metatab Format</a>
           <a href="https://github.com/Metatab/metatab-declarations/blob/master/specs/Metatab%20Packages.md">Metapack Packages</a>
@@ -41,81 +40,81 @@
   </div>
 </header>
 
+<!-- Hero -->
 <section class="hero">
-  <div class="container">
-    <h1>Metatab &amp; Metapack</h1>
-    <p class="subtitle">Metatab stores metadata in a spreadsheet, alongside data, ensuring that the metadata is easy to create, easy to read, and cannot be separated from the data. Metapack builds data packages with Metatab metadata.</p>
-    <div class="cta-buttons">
-      <a href="http://docs.metatab.org/" class="btn btn-primary">Metapack Documentation</a>
-      <a href="https://github.com/Metatab/metatab-declarations/blob/master/specs/Metatab%20Specification.md" class="btn btn-outline">Metatab Specifications</a>
-      <a href="https://github.com/Metatab/metapack" class="btn btn-outline">GitHub Project</a>
+  <h1>Metatab and Metapack</h1>
+  <div class="subtitle">Metadata for Mortals</div>
+  <p><strong>Metatab</strong> stores metadata in a spreadsheet, alongside data, ensuring that the metadata is easy to create, easy to read, and cannot be separated from the data. <strong>Metapack</strong> builds data packages with Metatab metadata.</p>
+</section>
+
+<main>
+  <!-- Hero image -->
+  <div class="row">
+    <div class="col-1-1">
+      <img class="full-img" src="images/metatab-main.png" alt="Metatab">
     </div>
   </div>
-</section>
 
-<section>
-  <div class="container">
-    <h2>Metadata for Mortals</h2>
-    <p>Metatab is a way of writing and storing metadata in the same spreadsheet as a dataset. Because it uses a tool every user already has — a spreadsheet — it is much simpler than documenting metadata in XML or JSON, resulting in more public datasets being properly documented.</p>
-    <p>Metadata is easily read by people and can be programmatically converted to machine formats like JSON, so, with a spreadsheet extension, metadata can be validated while users enter it, and the metadata allows for sophisticated automatic processing.</p>
-    <p>Metatab is a core part of <strong>Metapack</strong>, a data packaging format that uses Metatab formatted metadata files for building ZIP, Excel and Directory based data packages.</p>
+  <!-- CTA buttons -->
+  <div class="cta-row">
+    <a href="http://docs.metatab.org/" class="btn">Metapack Documentation</a>
+    <a href="https://github.com/Metatab/metatab-declarations/tree/master/specs" class="btn">Metatab Specifications</a>
+    <a href="https://github.com/Metatab" class="btn">Github Project</a>
   </div>
-</section>
 
-<section class="alt">
-  <div class="container">
-    <h2>The Metatab/Metapack System</h2>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Specification</h3>
-        <p>A clear specification for how to write standard metadata elements in a tabular format, using familiar spreadsheet tools.</p>
-      </div>
-      <div class="card">
-        <h3>CLI Programs</h3>
-        <p>Command-line tools for building metadata files and data packages, making automation easy.</p>
-      </div>
-      <div class="card">
-        <h3>Code Libraries</h3>
-        <p>Python and JavaScript libraries for parsing and manipulating Metatab data programmatically.</p>
+  <!-- Content + Get Metatab sidebar -->
+  <div class="row">
+    <div class="col-3-4">
+      <p>Metatab is a core part of Metapack, a data packaging format that uses Metatab formatted metadata files for building ZIP, Excel and Directory based data packages.</p>
+      <p>The Metatab/Metapack system includes:</p>
+      <ul class="content-list">
+        <li>A specification for how to write standard metadata elements in a tabular format</li>
+        <li>CLI Programs for building metadata files and data packages</li>
+        <li>Code libraries for parsing and manipulating Metatab data</li>
+      </ul>
+      <p>We also have demonstrations of:</p>
+      <ul class="content-list">
+        <li>Spreadsheet extensions that help users create valid metadata</li>
+        <li>A web service that supports the spreadsheet extensions</li>
+      </ul>
+      <p>The core of the project is the Metatab data format, which allows complex information to be represented in a simple, readable way in a spreadsheet. Using Metatab, a data producer can open a dataset in a spreadsheet, and quickly create valid metadata that conforms to standards. After publication, Data consumers can read and understand the metadata with no training and no additional tools.</p>
+      <p>Here are two examples, one in a <a href="https://docs.google.com/spreadsheets/d/1-xeyxkbDMbKDxG5jhsrtBsKgtBSHn0gn05tP9GgPY5w/edit?usp=sharing">Google spreadsheet</a> and <a href="https://drive.google.com/file/d/0B4dCPpfYVDivdUp6Q0N5cG03YUU/view?usp=sharing">another in Excel</a>.</p>
+    </div>
+    <div class="col-1-4">
+      <div class="sidebar">
+        <h2>Get Metatab</h2>
+        <p>The Metatab project is just getting started, and we need your help.</p>
+        <ul class="sidebar-list">
+          <li><strong>Data Producers.</strong> We're looking for government agencies who produce public data to provide input on their data workflows and other requirements.</li>
+          <li><strong>Data Consumers.</strong> If you use public data and would like better metadata, knowing what you need will help us get the project funded.</li>
+        </ul>
+        <p>For more information, contact: <a href="contact/">Eric Busboom</a>.</p>
       </div>
     </div>
-    <h3 style="margin-top: 40px;">Also demonstrated</h3>
-    <ul class="feature-list">
-      <li>Spreadsheet extensions that help users create valid metadata</li>
-      <li>A web service that supports the spreadsheet extensions</li>
-    </ul>
   </div>
-</section>
 
-<section>
-  <div class="container">
-    <h2>How It Works</h2>
-    <p>The core of the project is the Metatab data format, which allows complex information to be represented in a simple, readable way in a spreadsheet. Using Metatab, a data producer can open a dataset in a spreadsheet, and quickly create valid metadata that conforms to standards. After publication, data consumers can read and understand the metadata with no training and no additional tools.</p>
-    <div class="example-grid">
-      <img src="images/metatab-main.png" alt="Metatab in Google Spreadsheets">
-      <img src="images/metatab-validation.png" alt="Metatab in Excel">
+  <!-- Metadata Shouldn't Be Hard -->
+  <div class="row">
+    <div class="col-1-1">
+      <h2>Metadata Shouldn't Be Hard</h2>
+      <p>Most of the time, metadata is hard, so most public data producers don't bother with it. Standard metadata, like <a href="http://dublincore.org/">Dublin Core</a>, has easy-to-remember metadata terms and elements, but linking it to a file involves writing what most users consider cryptic formats, like RDF, XML, or JSON. Metatab uses standard Dublin Core metadata elements, but allows users to read and write them in a very familiar, readable format.</p>
     </div>
   </div>
-</section>
 
-<section class="alt">
-  <div class="container">
-    <h2>Metadata Shouldn't Be Hard</h2>
-    <p>Most of the time, metadata is hard, so most public data producers don't bother with it. Standard metadata, like Dublin Core, has easy-to-remember metadata terms and elements, but linking it to a file involves writing what most users consider cryptic formats, like RDF, XML, or JSON.</p>
-    <p>Metatab uses standard Dublin Core metadata elements, but allows users to read and write them in a very familiar, readable format.</p>
-    <div class="comparison">
-      <div class="comparison-box">
-        <h3>Tabular Metadata (Metatab)</h3>
-        <table class="metatab-table">
-          <tr><th>property</th><th>value</th></tr>
-          <tr><td>Title</td><td>An Example Data bundle</td></tr>
-          <tr><td>Title.language</td><td>en</td></tr>
-          <tr><td>Description</td><td>This data bundle is an example of how simple a data bundle can be.</td></tr>
-        </table>
-      </div>
-      <div class="comparison-box">
-        <h3>RDF/XML Metadata</h3>
-        <pre><code>&lt;?xml version="1.0"?&gt;
+  <!-- Comparison -->
+  <div class="row">
+    <div class="col-1-2">
+      <h3>Tabular Metadata</h3>
+      <table class="data-table">
+        <tr><th>property</th><th>value</th></tr>
+        <tr><td>Title</td><td>An Example Data bundle</td></tr>
+        <tr><td>Title.language</td><td>en</td></tr>
+        <tr><td>Description</td><td>This data bundle is an example of how simple a data bundle can be.</td></tr>
+      </table>
+    </div>
+    <div class="col-1-2">
+      <h3>RDF Metadata</h3>
+      <pre>&lt;?xml version="1.0"?&gt;
 &lt;rdf:RDF xmlns:rdf="http://..."
          xmlns:dc="http://..."&gt;
   &lt;rdf:Description&gt;
@@ -124,34 +123,69 @@
     &lt;dc:description&gt;This data
       bundle is an example...&lt;/dc:description&gt;
   &lt;/rdf:Description&gt;
-&lt;/rdf:RDF&gt;</code></pre>
-      </div>
+&lt;/rdf:RDF&gt;</pre>
     </div>
   </div>
-</section>
 
-<section>
-  <div class="container" style="text-align: center;">
-    <h2>Get Metatab</h2>
-    <p>The Metatab project is just getting started, and we need your help.</p>
-    <div class="card-grid">
-      <div class="card">
-        <h3>Data Producers</h3>
-        <p>We're looking for government agencies who produce public data to provide input on their data workflows and other requirements.</p>
-      </div>
-      <div class="card">
-        <h3>Data Consumers</h3>
-        <p>If you use public data and would like better metadata, knowing what you need will help us get the project funded.</p>
-      </div>
+  <!-- Divider -->
+  <div class="row"></div>
+
+  <!-- Workflow -->
+  <div class="row">
+    <div class="col-1-3">
+      <h2>Workflow</h2>
+      <p>Using Metatab is simple. A typical public data workflow with Metatab would involve:</p>
+      <ul class="content-list">
+        <li>A user opens a spreadsheet of data, then adds the Metatab extension to the spreadsheet.</li>
+        <li>The Metatab extension creates new worksheets for metadata and a schema, also known as a data dictionary. Metatab reads the data and automatically generates the data dictionary.</li>
+        <li>As the user types, the Metatab extension validates the user's entries, ensuring the metadata is always valid.</li>
+        <li>When the user is finished, the file can be saved directly to a data repository like Socrata or CKAN.</li>
+      </ul>
     </div>
-    <p style="margin-top: 20px;">For more information, contact: <a href="contact/">Eric Busboom</a>.</p>
+    <div class="col-2-3">
+      <img class="side-img" src="images/metatab-install.png" alt="Metatab Install">
+    </div>
   </div>
-</section>
+
+  <!-- Better Automation -->
+  <div class="row">
+    <div class="col-1-1">
+      <h2>Better Automation</h2>
+      <p>Because Metatab is sensible to both humans and computers, it's easy for people to write metadata that programs can use to alter data. After saving Metatab-formatted spreadsheets, datasets can be automatically uploaded to data repositories like Socrata or CKAN, including all of the metadata. Datasets can be properly routed for approval using workflow tools like Screendoor. Programs can understand what data columns mean and automatically geocode addresses or turn census codes into place names.</p>
+    </div>
+  </div>
+
+  <!-- Always Correct -->
+  <div class="row">
+    <div class="col-1-3">
+      <h2>Always Correct</h2>
+      <p>The Metatab spreadsheet extension — for both Excel and Google Docs — validates metadata as the user types to ensure that it is always correct. By including a <tt>ConformsTo</tt> element, users can set the standard used to validate the metadata. By creating a <tt>ConformsTo</tt> document (which is also a Metatab format file) and making it available on the web, organizations can create their own extensions to metadata elements.</p>
+    </div>
+    <div class="col-2-3">
+      <img class="side-img" src="images/metatab-validation.png" alt="Metatab Validation">
+    </div>
+  </div>
+
+  <!-- Install -->
+  <div class="row">
+    <div class="col-1-1">
+      <h2>Install for Python, Experiment with Javascript or Google</h2>
+      <p>Metatab/Metapack is currently available as a <a href="https://github.com/Metatab/metapack">Python module</a> for working with data packages on the command line. We're also working on a <a href="https://github.com/CivicKnowledge/metatab-js">Javascript module</a> for node and an <a href="projects/metatab-add-on/">Add-On for Google Spreadsheets</a>.</p>
+    </div>
+  </div>
+
+  <!-- Join the Project -->
+  <div class="row">
+    <div class="col-1-1">
+      <h2>Join the Project</h2>
+      <p>Metatab is an early stage project. The specifications for the Metatab format are nearly complete, and we're writing the spreadsheet extensions, but we'll need your help, particularly for providing additional requirements, refining the design, testing, and piloting the early deployments. If you or your organization either produces public data or consumes public data, we'd like to talk to you about your needs. We're particularly interested in working with state and county health agencies and the public and private organizations that use public health data.</p>
+      <p>If your organization would benefit from better metadata, please contact the project manager, Eric Busboom, at <a href="mailto:eric@civicknowledge.com">eric@civicknowledge.com</a> or 619-363-2607.</p>
+    </div>
+  </div>
+</main>
 
 <footer>
-  <div class="container">
-    <p>Metatab — Metadata for Mortals. <a href="https://github.com/Metatab">GitHub</a> &middot; <a href="contact/">Contact</a></p>
-  </div>
+  <p>Designed by Elegant Themes | Powered by WordPress</p>
 </footer>
 
 </body>

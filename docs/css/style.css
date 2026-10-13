@@ -1,206 +1,254 @@
-/* Metatab Static Site - v1.0 */
-:root {
-  --green: #2ea879;
-  --green-dark: #1a6b4a;
-  --green-light: #e8f5f0;
-  --bg: #ffffff;
-  --text: #333333;
-  --text-light: #666666;
-  --border: #e0e0e0;
-  --code-bg: #f5f5f5;
-}
-
+/* Metatab - matches original Divi WordPress design */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  color: var(--text);
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 14px;
   line-height: 1.7;
-  background: var(--bg);
+  color: #333;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Header */
+a { color: #4ea0c9; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Header - matches original Divi #main-header */
 header {
-  background: #ffffff;
-  border-bottom: 1px solid var(--border);
-  position: sticky;
+  background: #fff;
+  position: fixed;
   top: 0;
-  z-index: 100;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  height: 80px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1);
 }
-
 header .container {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 64px;
+  height: 80px;
 }
 
-.logo {
-  display: flex;
-  align-items: center;
+.logo { display: flex; align-items: center; gap: 10px; }
+.logo img { height: 43px; }
+
+nav { display: flex; gap: 0; align-items: center; }
+nav > a {
+  color: rgba(0,0,0,0.6);
+  font-size: 14px;
+  font-weight: 600;
+  padding: 6px 0;
+  margin: 0 10px;
   text-decoration: none;
-  gap: 10px;
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--text);
+  transition: color 0.3s;
 }
-
-.logo img { height: 36px; }
-
-nav { display: flex; gap: 4px; align-items: center; }
-
-nav a {
-  text-decoration: none;
-  color: var(--text);
-  padding: 8px 14px;
-  border-radius: 4px;
-  font-size: 15px;
-  font-weight: 500;
-  transition: background 0.15s;
-}
-nav a:hover, nav a.active { background: var(--green-light); color: var(--green-dark); }
+nav > a:hover, nav > a.active { color: #2ea3f2; text-decoration: none; }
 
 .dropdown { position: relative; }
-.dropdown > a::after { content: " ▾"; font-size: 10px; }
+.dropdown > a::after { content: " ▾"; font-size: 10px; vertical-align: middle; }
 .dropdown-menu {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  min-width: 280px;
-  padding: 6px 0;
-  z-index: 200;
+  border-top: 3px solid #2ea3f2;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  min-width: 260px;
+  padding: 20px 0;
+  z-index: 9999;
 }
 .dropdown:hover .dropdown-menu { display: block; }
 .dropdown-menu a {
   display: block;
-  padding: 8px 18px;
-  white-space: nowrap;
+  padding: 6px 20px;
+  color: rgba(0,0,0,0.6);
   font-size: 14px;
-}
-.dropdown-menu a:hover { background: var(--green-light); }
-
-/* Hero */
-.hero {
-  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 100%);
-  color: #fff;
-  text-align: center;
-  padding: 80px 20px 60px;
-}
-.hero h1 { font-size: 42px; font-weight: 800; margin-bottom: 16px; }
-.hero .subtitle { font-size: 20px; opacity: 0.9; max-width: 700px; margin: 0 auto 30px; line-height: 1.6; }
-.hero .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
-.btn {
-  display: inline-block;
-  padding: 12px 28px;
-  border-radius: 6px;
-  font-size: 16px;
   font-weight: 600;
   text-decoration: none;
-  transition: all 0.15s;
-  cursor: pointer;
+  transition: all 0.3s;
 }
-.btn-primary { background: #fff; color: var(--green-dark); }
-.btn-primary:hover { background: #f0f0f0; }
-.btn-outline { border: 2px solid rgba(255,255,255,0.5); color: #fff; }
-.btn-outline:hover { border-color: #fff; background: rgba(255,255,255,0.1); }
+.dropdown-menu a:hover { color: #2ea3f2; background: rgba(0,0,0,0.03); text-decoration: none; }
 
-/* Sections */
-section { padding: 60px 20px; }
-section.alt { background: #f9fafb; }
-.container { max-width: 960px; margin: 0 auto; }
-
-h2 { font-size: 32px; font-weight: 700; margin-bottom: 16px; color: var(--green-dark); }
-h3 { font-size: 20px; margin-bottom: 8px; }
-p { margin-bottom: 16px; color: var(--text-light); }
-
-/* Cards */
-.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px; margin-top: 30px; }
-.card {
-  background: #fff;
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 24px;
-  transition: box-shadow 0.15s;
+/* Hero fullwidth header */
+.hero {
+  margin-top: 80px;
+  text-align: center;
+  padding: 54px 20px 30px;
 }
-.card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
-.card h3 { color: var(--green); margin-bottom: 10px; }
+.hero h1 {
+  font-size: 72px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+.hero .subtitle {
+  font-size: 26px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 16px;
+}
+.hero p {
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-/* Feature list */
-.feature-list { list-style: none; margin: 20px 0; }
-.feature-list li {
-  padding: 10px 0 10px 28px;
+/* Content area */
+main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Rows - matches Divi et_pb_row */
+.row { padding: 23px 0; display: flex; flex-wrap: wrap; }
+
+.col-1-1 { width: 100%; padding: 0; }
+.col-3-4 { width: 75%; padding-right: 30px; }
+.col-1-4 { width: 25%; }
+.col-1-2 { width: 50%; padding: 0 15px; }
+.col-1-3 { width: 33.33%; padding: 0 15px; }
+.col-2-3 { width: 66.66%; padding: 0 15px; }
+
+@media (max-width: 768px) {
+  .col-3-4, .col-1-4, .col-1-2, .col-1-3, .col-2-3 { width: 100%; padding: 10px 0; }
+  .hero h1 { font-size: 36px; }
+  .hero .subtitle { font-size: 18px; }
+  .hero p { font-size: 16px; }
+}
+
+/* Type */
+h2 { font-size: 26px; font-weight: 500; color: #333; margin-bottom: 16px; line-height: 1.3; }
+h3 { font-size: 20px; font-weight: 500; color: #333; margin-bottom: 8px; }
+p { margin-bottom: 16px; line-height: 1.7; }
+
+/* Lists in content */
+.content-list {
+  list-style: none;
+  margin: 10px 0 20px;
+}
+.content-list li {
   position: relative;
-  color: var(--text-light);
+  padding: 4px 0 4px 20px;
+  line-height: 1.7;
 }
-.feature-list li::before {
-  content: "✓";
+.content-list li::before {
+  content: "•";
   position: absolute;
-  left: 0;
-  color: var(--green);
-  font-weight: 700;
+  left: 4px;
+  color: #4ea0c9;
 }
 
-/* Code / Table */
-pre { background: var(--code-bg); padding: 16px 20px; border-radius: 6px; overflow-x: auto; font-size: 14px; margin: 16px 0; }
-code { font-family: 'SF Mono', 'Menlo', 'Monaco', monospace; font-size: 13px; }
+/* Buttons - matches Divi outline button */
+.btn {
+  display: inline-block;
+  padding: 6px 20px;
+  border: 2px solid #4ea0c9;
+  border-radius: 3px;
+  color: #4ea0c9;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: transparent;
+}
+.btn:hover {
+  background: #4ea0c9;
+  color: #fff;
+  text-decoration: none;
+}
 
-.metatab-table {
+/* CTA button row */
+.cta-row {
+  padding: 0 0 44px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.cta-row .btn { min-width: 220px; text-align: center; }
+
+/* Full-width image */
+.full-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Sidebar */
+.sidebar h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.sidebar-list {
+  list-style: none;
+  margin: 10px 0;
+}
+.sidebar-list li {
+  padding: 4px 0;
+  line-height: 1.7;
+}
+
+/* Table - matches Divi style */
+.data-table {
   width: 100%;
   border-collapse: collapse;
-  margin: 16px 0;
   font-size: 14px;
+  margin: 10px 0;
 }
-.metatab-table th {
-  background: var(--green);
+.data-table th {
+  background: #4ea0c9;
   color: #fff;
-  padding: 10px 16px;
+  padding: 10px 15px;
   text-align: left;
-  font-weight: 600;
+  font-weight: 700;
 }
-.metatab-table td { padding: 10px 16px; border-bottom: 1px solid var(--border); }
+.data-table td {
+  padding: 8px 15px;
+  border-bottom: 1px solid #eee;
+}
 
-/* Comparison */
-.comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 20px; }
-@media (max-width: 640px) { .comparison { grid-template-columns: 1fr; } }
-.comparison-box { background: #fff; border: 1px solid var(--border); border-radius: 8px; padding: 20px; }
-.comparison-box h3 { color: var(--green); margin-bottom: 12px; }
+/* Code block */
+pre {
+  background: #f7f7f7;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 0;
+  font-size: 13px;
+  line-height: 1.4;
+  overflow-x: auto;
+  margin: 10px 0;
+  color: #333;
+  font-family: monospace;
+}
 
-/* Posts */
-.post { border-bottom: 1px solid var(--border); padding: 24px 0; }
-.post:last-child { border-bottom: none; }
-.post h3 { font-size: 22px; margin-bottom: 4px; }
-.post h3 a { color: var(--green-dark); text-decoration: none; }
-.post h3 a:hover { text-decoration: underline; }
-.post-meta { font-size: 13px; color: #999; margin-bottom: 10px; }
-
-/* Contact */
-.contact-info { margin: 20px 0; }
-.contact-info p { margin-bottom: 6px; }
-
-/* Mailing list form */
-.mailing-list { background: var(--green-light); border-radius: 8px; padding: 24px; margin: 20px 0; }
-.mailing-list h3 { margin-bottom: 12px; }
-
-/* Example images */
-.example-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0; }
-.example-grid img { width: 100%; border-radius: 6px; border: 1px solid var(--border); }
+/* Side image */
+.side-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 
 /* Footer */
 footer {
-  background: #2a2a2a;
-  color: #999;
+  background: #222;
+  color: #666;
   text-align: center;
-  padding: 30px 20px;
+  padding: 15px 20px;
   font-size: 14px;
+  margin-top: 40px;
 }
-footer a { color: var(--green); text-decoration: none; }
-footer a:hover { text-decoration: underline; }
+footer a { color: #666; }
